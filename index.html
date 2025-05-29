@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,10 +49,10 @@
     </nav>
 
     <!-- A section vai de ponta a ponta devido ao container-fluid -->
-    <section id="sobre" class="container-fluid my-2">
-      <div class="row align-items-center">
+    <section id="sobre" class="container-fluid">
+      <div class="row">
         <!-- col-12 ocupa toda a largura no mobile -->
-        <!-- col-md-6 ocupa metade da largura no desktop -->
+        <!-- col-md-7 ocupa 7 colunas de largura no desktop -->
         <div
           class="col-12 col-md-7 d-flex flex-column justify-content-center align-items-center px-5"
         >
@@ -64,7 +64,7 @@
             </p>
             <!-- col-md-3 controla o tamanho-->
             <div class="col-12 col-md-7 mt-3">
-              <!-- w-100 faz o botao ocupar 100% da largura -->
+              <!-- w-100 faz o botao ocupar 100% da largura no mobile -->
               <a class="btn btn-outline-primary w-100 px-4 py-2" href="#"
                 >Saiba Mais</a
               >
@@ -78,6 +78,19 @@
             alt="Imagem de uma geladeira"
           />
         </div>
+      </div>
+    </section>
+
+    <section id="funcionalidades" class="container">
+      <div class="row">
+        <!-- Ocupa 12 colunas no mobile -->
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <!--Ocupa 5 colunas das 12 no desktop -->
+          <div class="col-md-5 mt-5">
+            <h2 class="text-center">Funcionalidades</h2>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
 
