@@ -1,0 +1,15 @@
+/* Efeito de hover no card e no icone */
+
+.card {
+  transition: all 0.3s;
+}
+
+.card:hover {
+  background-color: lightseagreen;
+}
+
+.card:hover #icon,
+.card:hover .card-text,
+.card:hover .card-title {
+  color: #ffffff;
+}
