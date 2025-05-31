@@ -4,12 +4,29 @@
   transition: all 0.3s;
 }
 
-.card:hover {
-  background-color: lightseagreen;
+#cartao:hover {
+  background-color: #0d6efd;
 }
 
-.card:hover #icon,
-.card:hover .card-text,
-.card:hover .card-title {
+#cartao:hover #icon,
+#cartao:hover .card-text,
+#cartao:hover .card-title {
   color: #ffffff;
+}
+
+.cartao-depoimento {
+  background-color: #ffffff;
+  color: #212529;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 0.5rem; /* cantos arredondados para suavizar */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* sombra leve para dar profundidade */
+}
+
+.cartao-depoimento:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tamanho-fonte-depoimento {
+  font-size: 1rem;
 }

@@ -11,7 +11,10 @@
       crossorigin="anonymous"
     />
     <link href="style.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/8f637beb72.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8f637beb72.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Navbar - Responsiva usando a classe navbar-expand-lg, sendo responsiva a partir de 992px -->
@@ -87,64 +90,130 @@
     <section id="funcionalidades" class="container">
       <div class="row">
         <!-- Ocupa 12 colunas no mobile -->
-        <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+        <div
+          class="col-12 d-flex flex-column justify-content-center align-items-center"
+        >
           <!--Ocupa 5 colunas das 12 no desktop -->
           <div class="col-md-5 mt-5">
             <h2 class="text-center">Funcionalidades</h2>
           </div>
-           <div class="container">
+          <div class="container">
             <div class="row">
               <div class="col-12 col-md-4 mt-4">
-                <div class="card h-100">	
+                <div id="cartao" class="card h-100">
                   <div class="card-body d-flex flex-column align-items-center">
                     <div class="mb-3">
-                        <i id="icon" class="fa-solid fa-bowl-food fa-2x"></i>
+                      <i id="icon" class="fa-solid fa-bowl-food fa-2x"></i>
                     </div>
                     <h5 class="card-title">Identificação de Alimentos</h5>
                     <p class="card-text">
-                      Identificação de alimentos em tempo real, permitindo que você saiba exatamente o que está em seu refrigerador.
+                      Identificação de alimentos em tempo real, permitindo que
+                      você saiba exatamente o que está em seu refrigerador.
                     </p>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-md-4 mt-4">
-                <div class="card h-100">	
+                <div id="cartao" class="card h-100">
                   <div class="card-body d-flex flex-column align-items-center">
                     <div class="mb-3">
                       <i id="icon" class="fa-solid fa-scroll fa-2x"></i>
                     </div>
                     <h5 class="card-title">Sugestões de Receitas</h5>
                     <p class="card-text">
-                      Receitas personalizadas com base nos alimentos disponíveis, economizando tempo e dinheiro.
+                      Receitas personalizadas com base nos alimentos
+                      disponíveis, economizando tempo e dinheiro.
                     </p>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-md-4 mt-4">
-                <div class="card h-100">	
+                <div id="cartao" class="card h-100">
                   <div class="card-body d-flex flex-column align-items-center">
                     <div class="mb-3">
                       <i id="icon" class="fa-solid fa-recycle fa-2x"></i>
                     </div>
                     <h5 class="card-title">Evitar Desperdício</h5>
                     <p class="card-text">
-                      Evite desperdício alimentar com base nas suas compras e preferências.
+                      Evite desperdício alimentar com base nas suas compras e
+                      preferências.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-           </div>
+          </div>
         </div>
-      </div>
       </div>
     </section>
 
     <section id="depoimentos" class="container">
       <div class="row">
-        <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+        <div
+          class="col-12 d-flex flex-column justify-content-center align-items-center"
+        >
           <div class="col-md-5 mt-5">
             <h2 class="text-center">Depoimentos</h2>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4 mt-4">
+                <div class="card h-100 cartao-depoimento">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <div class="mb-3">
+                      <img
+                        class="img-fluid rounded-circle d-block mx-auto w-50"
+                        src="./assets/pessoa1.jpg"
+                        alt="Imagem de uma pessoa"
+                      />
+                    </div>
+                    <blockquote class="blockquote tamanho-fonte-depoimento">
+                      FoodiFy transformou minha rotina! Nunca mais desperdicei
+                      alimentos e ainda economizo nas compras.
+                    </blockquote>
+                    <footer class="blockquote-footer mt-2">
+                      Maria Oliveira
+                    </footer>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mt-4">
+                <div class="card h-100 cartao-depoimento">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <div class="mb-3">
+                      <img
+                        src="./assets/pessoa2.jpg"
+                        alt="Imagem de uma pessoa"
+                        class="img-fluid rounded-circle d-block mx-auto w-50"
+                      />
+                    </div>
+                    <blockquote class="blockquote tamanho-fonte-depoimento">
+                      Receitas personalizadas me ajudaram a variar o cardápio e
+                      evitar desperdícios. Recomendo muito!
+                    </blockquote>
+                    <footer class="blockquote-footer mt-2">João Silva</footer>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mt-4">
+                <div class="card h-100 cartao-depoimento">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <div class="mb-3">
+                      <img
+                        src="./assets/pessoa3.png"
+                        alt="Imagem de uma pessoa"
+                        class="img-fluid rounded-circle d-block mx-auto w-50"
+                      />
+                    </div>
+                    <blockquote class="blockquote tamanho-fonte-depoimento">
+                      A tecnologia da FoodiFy mudou completamente a forma como
+                      gerencio minha geladeira. Super útil!
+                    </blockquote>
+                    <footer class="blockquote-footer mt-2">Maria Duarte</footer>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
