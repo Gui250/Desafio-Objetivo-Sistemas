@@ -1,7 +1,7 @@
 /* Efeito de hover no card e no icone */
 
 .card {
-  transition: all 0.3s;
+  transition: all 0.3s; /* Aplica uma transição suave de 0.3 segundos para todas as propriedades que sofrerem alteração, como cor, borda, sombra etc. */
 }
 
 #cartao:hover {
@@ -17,14 +17,17 @@
 .cartao-depoimento {
   background-color: #ffffff;
   color: #212529;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves de 0.3 segundos apenas para transformações e sombra */
   border-radius: 0.5rem; /* cantos arredondados para suavizar */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* sombra leve para dar profundidade */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Aplica uma sombra leve abaixo do cartão, dando profundidade e "elevação" */
 }
 
+/* Quando o usuário passa o mouse sobre o "cartao-depoimento" */
 .cartao-depoimento:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(
+    1.05
+  ); /* Faz com que o cartão aumente de tamanho em 5% ao passar o mouse, criando um efeito de "zoom" */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Aumenta e intensifica a sombra para reforçar o efeito de elevação */
 }
 
 .tamanho-fonte-depoimento {
