@@ -33,9 +33,3 @@
 .tamanho-fonte-depoimento {
   font-size: 1rem;
 }
-
-.custom-hover {
-  transition: transform 0.3s;
-  cursor: pointer;
-  background-color: #0d6efd;
-}
