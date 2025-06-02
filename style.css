@@ -155,7 +155,6 @@ ul.features li {
   margin-top: 12rem;
 }
 
-/* Apply rules to all mobile devices */
 @media (max-width: 767px) {
   .webdoor {
     margin-top: 2rem;
@@ -171,7 +170,7 @@ ul.features li {
   }
 
   .mobileTitle {
-    display: inline !important;
+    display: inline;
     font-weight: bold;
   }
 }
