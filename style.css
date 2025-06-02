@@ -53,7 +53,7 @@ ul.features li {
 }
 
 .mobileTitle {
-  display: none !important;
+  display: none !important; /* Foi usado !important para garantir que, mesmo que algum outro seletor mais específico tentasse sobrescrever, este comando prevaleceria. Na verdade, se usar uma boa media query, não precisa de !important */
 }
 
 /* Wrapper principal da tabela: flex em coluna com espaçamento e alinhamento */
@@ -157,15 +157,32 @@ ul.features li {
 
 @media (max-width: 767px) {
   .webdoor {
+    /*
+      !important para sobrescrever o padding-left do desktop, que é 10rem.
+      Isso aconteceu porque o seletor .webdoor fora do media query tem a mesma especificidade.
+      Melhor prática: evitar !important e confiar no cascade, ou aumentar a especificidade como body .webdoor.
+    */
+
     margin-top: 2rem;
     padding-left: 3rem !important;
   }
 
   .tableTitle {
+    /*
+    !important aqui para forçar que o cabeçalho da tabela não apareça no mobile.
+      Isso serve para transformar a visualização em formato de cards no mobile.
+      Melhor prática: não precisa de !important, pois o media query tem prioridade natural se bem posicionado no CSS.
+    */
+
     display: none !important;
   }
 
   .tableBody {
+    /* 
+    !important para sobrescrever o flex-direction: row padrão no desktop.
+      Isso acontece porque o seletor tem a mesma força dentro e fora do media query.
+      Melhor prática: não precisa de !important se o CSS estiver organizado corretamente e media queries aplicadas após as regras principais.
+    */
     flex-direction: column !important;
   }
 
