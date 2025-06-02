@@ -9,3 +9,7 @@ produto em destaque com descrição(hero section), diferenciais do produto em um
 <p align="center">
     <img src="./assets/to_readme/pagina foodify.png" alt="pagina foodify" />
 </p>
+
+<p align="center">
+    <img src="./assets/to_readme/videotogif-ezgif.com-video-to-gif-converter.gif alt="pagina foodify" />
+</p>
