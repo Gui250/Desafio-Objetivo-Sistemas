@@ -38,13 +38,132 @@
   width: 120px;
 }
 
-@media (max-width: 767px) {
-  .mt-mobile {
-    margin-top: 1.5rem;
-  }
-}
-
 .webdoor {
   padding-right: 3rem;
   padding-left: 10rem;
+}
+
+ul.features {
+  list-style: none;
+}
+
+ul.features li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mobileTitle {
+  display: none !important;
+}
+
+/* Apply rules to all mobile devices */
+@media (max-width: 767px) {
+  .webdoor {
+    margin-top: 2rem;
+    padding-left: 3rem !important;
+  }
+
+  .tableTitle {
+    display: none !important;
+  }
+
+  .tableBody {
+    flex-direction: column !important;
+  }
+
+  .mobileTitle {
+    display: inline !important;
+    font-weight: bold;
+  }
+}
+
+/* Wrapper principal da tabela: flex em coluna com espaçamento e alinhamento */
+.tableWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* espaço entre linhas */
+  justify-content: center;
+  align-items: flex-start; /* alinhamento à esquerda */
+}
+
+/* Linha do cabeçalho da tabela */
+.tableTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem; /* espaço entre colunas */
+  justify-content: center;
+  align-items: space-evenly;
+  border-bottom: 1px solid #e6e6e6; /* linha separadora */
+  padding-bottom: 0.5rem; /* espaçamento interno inferior */
+}
+
+/* Linhas de dados da tabela */
+.tableBody {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem; /* espaço entre colunas */
+  justify-content: center;
+  align-items: space-evenly;
+  border-bottom: 1px solid #e6e6e6; /* linha separadora */
+  padding-bottom: 1.5rem; /* espaçamento interno inferior */
+}
+
+/* Classe para adicionar margem superior */
+.mt-1 {
+  margin-top: 1rem;
+}
+
+/* Flex para colunas que ocupam 1 parte do espaço */
+.flex1 {
+  flex: 1;
+}
+
+/* Flex para colunas que ocupam 4 partes do espaço */
+.flex4 {
+  flex: 4;
+}
+
+/* Texto em negrito */
+.fw-bold {
+  font-weight: bold;
+}
+
+/* Container flexível em coluna */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Alinhamento à esquerda para itens flexíveis */
+.align-start {
+  align-items: flex-start;
+}
+
+/* Estilo para a lista de benefícios dentro das células */
+.benefits {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* espaçamento entre itens */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Exibir título da coluna em dispositivos móveis */
+.mobileTitle {
+  display: none; /* padrão desktop: escondido */
+}
+
+/* Flex row com margem superior para linhas específicas */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: space-evenly;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 1.5rem;
 }
