@@ -33,3 +33,13 @@
 .tamanho-fonte-depoimento {
   font-size: 1rem;
 }
+
+.personPhoto {
+  width: 120px;
+}
+
+@media (max-width: 767px) {
+  .mt-mobile {
+    margin-top: 1.5rem;
+  }
+}
