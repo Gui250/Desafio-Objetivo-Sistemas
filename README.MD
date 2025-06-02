@@ -11,5 +11,5 @@ produto em destaque com descrição(hero section), diferenciais do produto em um
 </p>
 
 <p align="center">
-    <img src="./assets/to_readme/videotogif-ezgif.com-video-to-gif-converter.gif alt="pagina foodify" />
+    <img src="./assets/to_readme/videotogif-ezgif.com-video-to-gif-converter.gif" alt="pagina foodify" />
 </p>
